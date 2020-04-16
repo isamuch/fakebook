@@ -1,0 +1,326 @@
+/* ---------------------------------------- */
+/* BASIC SETUP */
+/* ---------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-rendering: optimizeLegibility;
+    color: #000;
+    background-color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    overflow-x: hidden;
+}
+
+/* ---------------------------------------- */
+/* REUSE COMPONENT */
+/* ---------------------------------------- */
+
+/* Layout */
+
+.row {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 580px 400px;
+}
+
+.grid-2-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+/* Link */
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover,
+a:active {
+    color: #000;
+}
+
+/* ---------------------------------------- */
+/* HEADER */
+/* ---------------------------------------- */
+
+header {
+    /* background-color: #3b5998; */
+    background: linear-gradient(#4d69a2, #3b5998);
+    height: 82px;
+}
+
+header .row {
+    padding-top: 13px;
+}
+
+/* logo header */
+
+.logo-header h1 {
+    margin-top: 17px;
+    color: #fff;
+    line-height: 0.8em;
+}
+
+/* login header */
+
+.login-header table {
+    float: right;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+.login-header td {
+    padding-left: 14px;
+    padding-bottom: 5px;
+}
+
+.login-header label {
+    color: #fff;
+}
+
+.login-header input[type=text],
+.login-header input[type=password] {
+    width: 150px;
+    padding: 3px 3px 4px 3px;
+    border: 1px solid #1d2a5b;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    outline: none;
+    font-size: 12px;
+}
+
+.login-header input[type="submit"] {
+    cursor: pointer;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 6px;
+    background-color: #4267b2;
+    border: 1px solid #29487d;
+    line-height: 18px;
+    outline: none;
+}
+
+.login-header input[type="submit"]:hover {
+    background-color: #3b5998;
+}
+
+.login-header a:link,
+.login-header a:visited {
+    color: #9cb4d8;
+}
+
+.login-header a:hover,
+.login-header a:active {
+    text-decoration: underline;
+}
+
+/* ---------------------------------------- */
+/* SECTION REGISTER */
+/* ---------------------------------------- */
+
+.section-register {
+    background: linear-gradient(#fff, #d3d8e8);
+}
+
+/* info register */
+
+.section-register .info-register {
+    margin-top: 40px;
+    color: #0e385f;
+    line-height: 29px;
+    word-spacing: -1px;
+    width: 450px;
+    font-weight: 100;
+}
+
+.section-register img {
+    height: 194px;
+    width: auto;
+}
+
+/* form register */
+
+.form-register .main-label {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0 5px 0;
+}
+
+.form-register .second-label {
+    font-size: 19px;
+    font-weight: 500;
+    color: #1d2129;
+    margin-bottom: 20px;
+}
+
+.form-register input[type=text],
+.form-register input[type=password] {
+    padding: 8px 10px;
+    width: 100%;
+    border: 1px solid #ccd0d5;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+}
+
+.form-register .register div {
+    margin-bottom: 10px;
+}
+
+.form-register .birthday {
+    margin-top: 15px;
+}
+
+.form-register .register label.main-label {
+    color: #90949c;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.form-register select {
+    padding: 5px;
+    font-size: 13px;
+    color: #1c1e21;
+    border: 1px solid #ccd0d5;
+    display: inline-block;
+    outline: none;
+}
+
+.form-register option {
+    outline: none;
+}
+
+.form-register .register label.second-label {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.form-register .register .sex {
+    margin: 5px 0 0 5px;
+}
+
+.form-register .register span {
+    padding: 5px 15px 4px 5px;
+}
+
+.policy {
+    color: #777;
+    font-size: 11px;
+    width: 316px;
+}
+
+.policy a:link,
+.policy a:visited {
+    color: #385898;
+}
+
+.policy a:hover,
+.policy a:active {
+    text-decoration: underline;
+}
+
+.btn-submit {
+    margin-top: 20px;
+}
+
+.form-register .register input[type=submit] {
+    padding: 7px 20px;
+    min-width: 194px;
+    text-align: center;
+    background: linear-gradient(#67ae55, #578843);
+    background-color: #69a74e;
+    box-shadow: inset 0 1px 1px #a4e388;
+    border: 1px solid;
+    border-color: #3b6e22 #3b6e22 #2c5115;
+    font-size: 19px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.create-page {
+    font-weight: bold;
+    margin-top: 35px;
+    margin-bottom: 35px !important;
+    font-size: 13px;
+    color: #666;
+}
+
+.create-page a:link,
+.create-page a:visited {
+    color: #385898;
+}
+
+.create-page a:hover,
+.create-page a:active {
+    text-decoration: underline;
+}
+
+/* ---------------------------------------- */
+/* FOOTER */
+/* ---------------------------------------- */
+
+footer {
+    margin: 50px 0;
+    color: #737373;
+    font-size: 12px;
+}
+
+footer .lang {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dddfe2;
+}
+
+footer .lang a:link,
+footer .lang a:visited {
+    padding-left: 10px;
+    color: #385898;
+    text-decoration: none;
+}
+
+footer .lang a:hover,
+footer .lang a:active {
+    text-decoration: underline;
+}
+
+footer .feature {
+    margin-top: 10px;
+}
+
+footer .feature a:link,
+footer .feature a:visited {
+    padding-right: 20px;
+    color: #385898;
+    text-decoration: none;
+}
+
+footer .feature a:hover,
+footer .feature a:active {
+    text-decoration: underline;
+}
